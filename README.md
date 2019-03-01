@@ -1,5 +1,4 @@
-# using-typescript
+# maruware.github.io src
 
-https://using-typescript.gatsbyjs.org
+https://maruware.github.io
 
-Demonstrates using Typescript to build Gatsby sites.
