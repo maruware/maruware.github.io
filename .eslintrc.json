@@ -30,5 +30,10 @@
     },
     "globals": {
       "fetch": false
+    },
+    "settings": {
+      "import/ignore": [
+        "\\.(jpg|jpeg|png)$"
+      ]
     }
   }

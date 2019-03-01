@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteName: `Using Typescript Example`
+    siteName: `maruware`
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -9,6 +9,15 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography.js`,
         omitGoogleFont: true
+      }
+    },
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'config',
+        path: `${__dirname}/src/config`
       }
     }
   ]

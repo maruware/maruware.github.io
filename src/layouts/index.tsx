@@ -2,13 +2,13 @@ import * as React from 'react'
 
 import { rhythm } from '../utils/typography'
 
-const MainLayout: React.SFC = ({ children }) => (
+const MainLayout: React.FC = ({ children }) => (
   <div
     style={{
       margin: `0 auto`,
-      marginBottom: rhythm(1.5),
+      // marginBottom: rhythm(1.5),
       marginTop: rhythm(1.5),
-      maxWidth: 650,
+      // maxWidth: 650,
       paddingLeft: rhythm(3 / 4),
       paddingRight: rhythm(3 / 4)
     }}
