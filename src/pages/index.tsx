@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
 import Layout from '../layouts'
+import { Helmet } from 'react-helmet'
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -30,6 +31,9 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
     const { siteName } = this.props.data.site.siteMetadata
     return (
       <Layout>
+        <Helmet>
+          <title>{siteName}</title>
+        </Helmet>
         <h1>{this.hello} Typescript world!</h1>
         <p>
           This site is named <strong>{siteName}</strong>
