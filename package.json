@@ -8,6 +8,7 @@
     "start": "gatsby develop",
     "develop": "gatsby develop",
     "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "type-check": "tsc --noEmit",
     "lint": "eslint ."
   },
@@ -37,6 +38,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.16.4",
     "typescript": "^2.9.1"
   }
