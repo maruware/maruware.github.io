@@ -25,20 +25,20 @@ export const pageQuery = graphql`
   }
 `
 
-export default class IndexPage extends React.Component<IndexPageProps, {}> {
-  readonly hello = `Hello`
-  public render() {
-    const { siteName } = this.props.data.site.siteMetadata
-    return (
-      <Layout>
-        <Helmet>
-          <title>{siteName}</title>
-        </Helmet>
-        <h1>{this.hello} Typescript world!</h1>
-        <p>
-          This site is named <strong>{siteName}</strong>
-        </p>
-      </Layout>
-    )
-  }
+const hello = 'hello'
+
+const IndexPage: React.FC<IndexPageProps> = props => {
+  const { siteName } = props.data.site.siteMetadata
+  return (
+    <Layout>
+      <Helmet>
+        <title>{siteName}</title>
+      </Helmet>
+      <h1>{hello} Typescript world!</h1>
+      <p>
+        This site is named <strong>{siteName}</strong>
+      </p>
+    </Layout>
+  )
 }
+export default IndexPage
