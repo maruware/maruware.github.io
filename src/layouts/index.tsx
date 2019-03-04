@@ -1,20 +1,12 @@
 import * as React from 'react'
+import styled from 'styled-components'
 
-import { rhythm } from '../utils/typography'
+const Container = styled.div`
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+`
 
-const MainLayout: React.FC = ({ children }) => (
-  <div
-    style={{
-      margin: `0 auto`,
-      // marginBottom: rhythm(1.5),
-      marginTop: rhythm(1.5),
-      // maxWidth: 650,
-      paddingLeft: rhythm(3 / 4),
-      paddingRight: rhythm(3 / 4)
-    }}
-  >
-    {children}
-  </div>
-)
+const MainLayout: React.FC = ({ children }) => <Container>{children}</Container>
 
 export default MainLayout

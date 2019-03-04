@@ -32,6 +32,7 @@ const Logo = styled(_Logo)`
   position: absolute;
   left: 50%;
   top: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   opacity: ${props => (props.hover ? 0.2 : 1)};
   transition: opacity 0.5s;
