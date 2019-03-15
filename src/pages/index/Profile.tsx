@@ -11,14 +11,13 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { grey, blue } from '@material-ui/core/colors'
 
 const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 64px;
+  margin-bottom: ${props => props.theme.spacing.unit * 8};
 
-  margin-right: 40px;
+  margin-right: ${props => props.theme.spacing.unit * 5};
 `
 
 const ProfileImage = styled.img`
@@ -31,14 +30,18 @@ const ProfileName = styled.h2`
   font-weight: 800;
 `
 
+const ProfileDesc = styled.p`
+  font-size: 16px;
+`
+
 const Link = styled.a`
   text-decoration: none;
   &:hover {
-    color: ${blue[700]};
+    color: #555;
   }
-  color: ${grey[700]};
+  color: #ccc;
+  margin: ${props => props.theme.spacing.unit};
 `
-
 interface IconLinkProps {
   url: string
   icon: IconDefinition
@@ -57,6 +60,8 @@ const Profile: React.FC = () => (
   <ProfileContainer>
     <ProfileImage src={profileImage} />
     <ProfileName>maruware</ProfileName>
+
+    <ProfileDesc>Backend/Infra Engineer</ProfileDesc>
 
     <IconsContainer>
       <IconLink url="https://github.com/maruware" icon={faGithub} />
