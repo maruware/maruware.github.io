@@ -15,15 +15,15 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: ${props => props.theme.spacing.unit * 8};
-
-  margin-right: ${props => props.theme.spacing.unit * 5};
+  align-items: center;
+  margin-bottom: ${props => props.theme.spacing.byUnit(8)};
 `
 
 const ProfileImage = styled.img`
-  border-radius: 4px;
-  width: 100px;
-  height: 100px;
+  border-radius: 8px;
+  width: 50vw;
+  height: 50vw;
+  margin: ${props => props.theme.spacing.byUnit(1)};
 `
 
 const ProfileName = styled.h2`
@@ -40,7 +40,7 @@ const Link = styled.a`
     color: #555;
   }
   color: #ccc;
-  margin: ${props => props.theme.spacing.unit};
+  margin: ${props => props.theme.spacing.byUnit(1)};
 `
 interface IconLinkProps {
   url: string

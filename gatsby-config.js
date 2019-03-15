@@ -11,13 +11,11 @@ module.exports = {
         omitGoogleFont: true
       }
     },
-    `gatsby-plugin-styled-components`,
-    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'config',
-        path: `${__dirname}/src/config`
+        name: 'articles',
+        path: `${__dirname}/src/data/articles`
       }
     }
   ]

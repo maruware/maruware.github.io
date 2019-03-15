@@ -6,20 +6,11 @@ export interface Tech {
   logo: string
 }
 
-interface TechStackProps {
-  techStack: Tech[]
-}
-
-const List = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`
-
 // TechItemRoot
 const TechItemRoot = styled.div`
   display: flex;
   align-items: center;
-  padding: 8px;
+  padding: ${props => props.theme.spacing.byUnit(1)};
 `
 
 // Logo
@@ -41,8 +32,8 @@ const Logo = styled(_Logo)`
 // LogoContainer
 const LogoContainer = styled.div`
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 18vw;
+  height: 18vw;
 `
 
 const TechName = styled.p`
@@ -79,19 +70,4 @@ const TechItem: React.FC<TechItemProps> = ({ name, logo }) => {
   )
 }
 
-const Root = styled.div``
-
-const TechStack: React.FC<TechStackProps> = ({ techStack }) => {
-  return (
-    <Root>
-      <h2>Tech Stack</h2>
-      <List>
-        {techStack.map((tech, idx) => (
-          <TechItem key={idx} name={tech.name} logo={tech.logo} />
-        ))}
-      </List>
-    </Root>
-  )
-}
-
-export default TechStack
+export default TechItem

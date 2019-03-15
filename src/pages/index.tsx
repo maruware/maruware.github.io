@@ -4,8 +4,9 @@ import Layout from '../layouts'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
-import Profile from './index/Profile'
-import TechStack, { Tech } from './index/TechStack'
+import Profile from '../components/index/Profile'
+import TechStack from '../components/index/TechStack'
+import Favorites from '../components/index/Favorites'
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -15,11 +16,6 @@ interface IndexPageProps {
       siteMetadata: {
         siteName: string
       }
-    }
-    allTechStackYaml: {
-      edges: {
-        node: Tech
-      }[]
     }
   }
 }
@@ -31,25 +27,20 @@ export const pageQuery = graphql`
         siteName
       }
     }
-    allTechStackYaml {
-      edges {
-        node {
-          name
-          logo
-        }
-      }
-    }
   }
 `
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
+
+  padding: ${props => props.theme.spacing.byUnit(2)};
 `
 
 const IndexPage: React.FC<IndexPageProps> = props => {
   const { siteName } = props.data.site.siteMetadata
-  const techStack = props.data.allTechStackYaml.edges.map(e => e.node)
   return (
     <Layout>
       <Helmet>
@@ -58,7 +49,8 @@ const IndexPage: React.FC<IndexPageProps> = props => {
 
       <Container>
         <Profile />
-        <TechStack techStack={techStack} />
+        <Favorites />
+        <TechStack />
       </Container>
     </Layout>
   )

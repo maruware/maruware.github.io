@@ -3,14 +3,16 @@ import styled, { ThemeProvider } from 'styled-components'
 
 const theme = {
   spacing: {
-    unit: '8px'
+    byUnit: (n: number) => `${n * 8}px`
   }
 }
 
 const Container = styled.div`
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   margin: 0 auto;
+  background-color: #f5f5f5;
+  min-height: 100vh;
 `
 
 const MainLayout: React.FC = ({ children }) => (
