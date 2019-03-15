@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import TechItem from './TechItem'
+import SubHeader from './SubHeader';
 
 const data = [
   {
@@ -55,6 +56,8 @@ interface TechStackProps {}
 const List = styled.div`
   display: flex;
   flex-wrap: wrap;
+  max-width: 720px;
+  justify-content: center;
 `
 
 const Root = styled.div`
@@ -66,7 +69,7 @@ const Root = styled.div`
 const TechStack: React.FC<TechStackProps> = () => {
   return (
     <Root>
-      <h2>Tech Stack</h2>
+      <SubHeader>Tech Stack</SubHeader>
       <List>
         {data.map((tech, idx) => (
           <TechItem key={idx} name={tech.name} logo={tech.logo} />

@@ -10,7 +10,10 @@ export interface Tech {
 const TechItemRoot = styled.div`
   display: flex;
   align-items: center;
-  padding: ${props => props.theme.spacing.byUnit(1)};
+  margin: ${props => props.theme.spacing.byUnit(2)};
+  @media (max-width: 576px) {
+    margin: ${props => props.theme.spacing.byUnit(1)};
+  }
 `
 
 // Logo
@@ -32,8 +35,12 @@ const Logo = styled(_Logo)`
 // LogoContainer
 const LogoContainer = styled.div`
   position: relative;
-  width: 18vw;
-  height: 18vw;
+  width: 120px;
+  height: 120px;
+  @media (max-width: 576px) {
+    width: 60px;
+    height: 60px;
+  }
 `
 
 const TechName = styled.p`

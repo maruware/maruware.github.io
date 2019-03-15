@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { grey } from '@material-ui/core/colors'
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -21,25 +22,27 @@ const ProfileContainer = styled.div`
 
 const ProfileImage = styled.img`
   border-radius: 8px;
-  width: 50vw;
-  height: 50vw;
+  width: 160px;
+  height: 160px;
   margin: ${props => props.theme.spacing.byUnit(1)};
 `
 
 const ProfileName = styled.h2`
   font-weight: 800;
+  color: inherit;
 `
 
 const ProfileDesc = styled.p`
   font-size: 16px;
+  color: inherit;
 `
 
 const Link = styled.a`
   text-decoration: none;
   &:hover {
-    color: #555;
+    color: ${grey[900]};
   }
-  color: #ccc;
+  color: ${grey[500]};
   margin: ${props => props.theme.spacing.byUnit(1)};
 `
 interface IconLinkProps {

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import TechItem from './TechItem'
+import SubHeader from './SubHeader';
 
 const data = [
   {
@@ -28,6 +29,7 @@ interface FavoritesProps {}
 const List = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `
 
 const Root = styled.div`
@@ -41,7 +43,7 @@ const Root = styled.div`
 const Favorites: React.FC<FavoritesProps> = () => {
   return (
     <Root>
-      <h2>Current Tech Favorites</h2>
+      <SubHeader>Current Tech Favorites</SubHeader>
       <List>
         {data.map((tech, idx) => (
           <TechItem key={idx} name={tech.name} logo={tech.logo} />
