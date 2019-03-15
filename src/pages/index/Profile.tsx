@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import {grey, blue} from '@material-ui/core/colors'
+import { grey, blue } from '@material-ui/core/colors'
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ const ProfileName = styled.h2`
 const Link = styled.a`
   text-decoration: none;
   &:hover {
-    color: ${blue[700]} 
+    color: ${blue[700]};
   }
   color: ${grey[700]};
 `
@@ -46,7 +46,7 @@ interface IconLinkProps {
 const IconLink: React.FC<IconLinkProps> = ({ url, icon }) => {
   return (
     <Link href={url} target="_blank">
-      <FontAwesomeIcon icon={icon} size="2x"/>
+      <FontAwesomeIcon icon={icon} size="2x" />
     </Link>
   )
 }
