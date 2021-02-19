@@ -14,15 +14,6 @@ const data = [
     logo: 'https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png'
   },
   {
-    name: 'Ruby',
-    logo: 'https://cdn.worldvectorlogo.com/logos/ruby.svg'
-  },
-  {
-    name: 'Python',
-    logo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png'
-  },
-  {
     name: 'Go',
     logo:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Go_Logo_Aqua.svg/1280px-Go_Logo_Aqua.svg.png'
@@ -33,21 +24,30 @@ const data = [
       'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2000px-Amazon_Web_Services_Logo.svg.png'
   },
   {
-    name: 'GCP',
-    logo: 'https://www.gstatic.com/images/branding/product/2x/cloud_512dp.png'
-  },
-  {
-    name: 'kubernetes',
-    logo: 'https://avatars1.githubusercontent.com/u/13629408?s=400&v=4'
+    name: 'React',
+    logo:
+      'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
   },
   {
     name: 'Terraform',
     logo: 'https://www.terraform.io/assets/images/og-image-8b3e4f7d.png'
   },
   {
-    name: 'React',
+    name: 'Ruby',
+    logo: 'https://cdn.worldvectorlogo.com/logos/ruby.svg'
+  },
+  {
+    name: 'Python',
     logo:
-      'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png'
+  },
+  {
+    name: 'GCP',
+    logo: 'https://www.gstatic.com/images/branding/product/2x/cloud_512dp.png'
+  },
+  {
+    name: 'kubernetes',
+    logo: 'https://avatars1.githubusercontent.com/u/13629408?s=400&v=4'
   }
 ]
 
