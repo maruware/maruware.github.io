@@ -1,9 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import TechItem from './TechItem'
-import SubHeader from './SubHeader';
+import SubHeader from './SubHeader'
 
 const data = [
+  {
+    name: 'Go',
+    logo:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Go_Logo_Aqua.svg/1280px-Go_Logo_Aqua.svg.png'
+  },
   {
     name: 'Node.js',
     logo:
@@ -14,8 +19,9 @@ const data = [
     logo: 'https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png'
   },
   {
-    name: 'kubernetes',
-    logo: 'https://avatars1.githubusercontent.com/u/13629408?s=400&v=4'
+    name: 'AWS',
+    logo:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2000px-Amazon_Web_Services_Logo.svg.png'
   },
   {
     name: 'React',

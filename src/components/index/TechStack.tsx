@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import TechItem from './TechItem'
-import SubHeader from './SubHeader';
+import SubHeader from './SubHeader'
 
 const data = [
   {
@@ -23,7 +23,7 @@ const data = [
       'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png'
   },
   {
-    name: 'Golang',
+    name: 'Go',
     logo:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Go_Logo_Aqua.svg/1280px-Go_Logo_Aqua.svg.png'
   },
