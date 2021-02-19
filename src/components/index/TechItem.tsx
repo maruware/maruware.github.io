@@ -35,11 +35,11 @@ const Logo = styled(_Logo)`
 // LogoContainer
 const LogoContainer = styled.div`
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   @media (max-width: 576px) {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 `
 
