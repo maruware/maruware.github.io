@@ -30,7 +30,7 @@ const data = [
   },
   {
     name: 'Terraform',
-    logo: 'https://www.terraform.io/assets/images/og-image-8b3e4f7d.png'
+    logo: '/terraform-icon.png'
   },
   {
     name: 'Ruby',
