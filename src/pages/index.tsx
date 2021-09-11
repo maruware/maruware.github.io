@@ -1,8 +1,9 @@
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import * as React from 'react'
 import Layout from '../layouts'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
+import { blueGrey } from '@material-ui/core/colors'
 
 import Profile from '../components/index/Profile'
 import TechStack from '../components/index/TechStack'
@@ -39,6 +40,14 @@ const Container = styled.div`
   padding: ${props => props.theme.spacing.byUnit(2)};
 `
 
+const BlogLink = styled(Link)`
+  margin-bottom: ${props => props.theme.spacing.byUnit(6)};
+  color: ${blueGrey[500]};
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
 const IndexPage: React.FC<IndexPageProps> = props => {
   const { siteName } = props.data.site.siteMetadata
   return (
@@ -49,6 +58,7 @@ const IndexPage: React.FC<IndexPageProps> = props => {
 
       <Container>
         <Profile />
+        <BlogLink to="/blog">Blog</BlogLink>
         <Favorites />
         <TechStack />
       </Container>

@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
   faTwitter,
-  IconDefinition
+  IconDefinition,
 } from '@fortawesome/free-brands-svg-icons'
 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -17,7 +17,7 @@ const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: ${props => props.theme.spacing.byUnit(8)};
+  margin-bottom: ${props => props.theme.spacing.byUnit(2)};
 `
 
 const ProfileImage = styled.img`
