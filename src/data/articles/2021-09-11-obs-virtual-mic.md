@@ -2,7 +2,7 @@
 slug: '/blog/obs-virtual-mic'
 date: '2021-09-11'
 title: 'OBS + BlackHoleで仮想マイク的なことをする'
-image: ''
+image: '/blog-images/obs.png'
 ---
 
 WebRTCに関する開発をしているとどうしてもWebカメラを使った検証をすることになる。  

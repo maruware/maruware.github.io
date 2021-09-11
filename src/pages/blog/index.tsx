@@ -7,7 +7,7 @@ import { blue, grey } from '@material-ui/core/colors'
 import {
   Card as _Card,
   CardActionArea,
-  CardMedia,
+  CardMedia as _CardMedia,
   CardContent,
 } from '@material-ui/core'
 
@@ -122,7 +122,9 @@ const Title = styled.h1`
 
 const Main = styled.main``
 
-const Article = styled.div``
+const Article = styled.div`
+  margin-bottom: 24px;
+`
 const ArticleTitle = styled.h3`
   color: ${grey[700]};
 `
@@ -134,5 +136,10 @@ const ArticleDate = styled.div`
 `
 
 const Card = styled(_Card)`
-  width: 400px;
+  width: 480px;
+`
+
+const CardMedia = styled(_CardMedia)`
+  height: 240px;
+  object-fit: cover;
 `
