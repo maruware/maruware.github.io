@@ -87,4 +87,18 @@ const ArticleContent = styled.div`
   padding-top: 32px;
   padding-bottom: 32px;
   min-width: 640px;
+
+  a {
+    color: ${blue[700]};
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  pre {
+    background-color: ${grey[200]};
+    padding: 12px;
+    max-width: 480px;
+  }
 `
