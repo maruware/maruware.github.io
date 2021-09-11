@@ -112,15 +112,24 @@ const Content = styled.body`
 `
 
 const Header = styled.header`
-  padding-top: 64px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+
+  @media (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
 `
 
 const Title = styled.h1`
   font-size: 24px;
 `
 
-const Main = styled.main``
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 const Article = styled.div`
   margin-bottom: 24px;
@@ -136,7 +145,10 @@ const ArticleDate = styled.div`
 `
 
 const Card = styled(_Card)`
-  width: 480px;
+  width: 320px;
+  @media (min-width: 768px) {
+    width: 480px;
+  }
 `
 
 const CardMedia = styled(_CardMedia)`

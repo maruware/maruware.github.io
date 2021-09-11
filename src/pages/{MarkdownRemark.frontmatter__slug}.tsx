@@ -67,13 +67,22 @@ export default function Template({
 }
 
 const Container = styled.main`
-  padding: 64px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
+  @media (min-width: 768px) {
+    padding: 32px;
+  }
+  @media (min-width: 1024px) {
+    padding: 64px;
+  }
   /* align-items: center; */
 `
 const ArticleTitle = styled.h1`
-  font-size: 32px;
+  font-size: 24px;
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
   color: ${grey[800]};
   font-weight: 700;
   margin-bottom: 1rem;
@@ -86,7 +95,9 @@ const ArticleDate = styled.div`
 const ArticleContent = styled.div`
   padding-top: 32px;
   padding-bottom: 32px;
-  min-width: 640px;
+  @media (min-width: 1024px) {
+    max-width: 1024;
+  }
 
   a {
     color: ${blue[700]};
