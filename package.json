@@ -8,7 +8,7 @@
     "start": "gatsby develop",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public -b gh-pages",
+    "deploy": "gatsby build && gh-pages -d public -b gh-pages --dotfiles",
     "type-check": "tsc --noEmit",
     "lint": "eslint ."
   },
